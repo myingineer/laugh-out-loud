@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Noto Sans Symbols', sans-serif;
+    display: flex;
+    height: 95vh;
+    justify-content: center;
+    background-image: url(https://1000logos.net/wp-content/uploads/2023/05/Laughing-Emoji.png);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+.laugh {
+    display: none;
+}
+
+.main-container {
+    /* border: 2px solid black; */
+    width: 90%;
+    height: 100%;
+    padding: 20px;
+}
+
+.question {
+    /* border: 1px solid saddlebrown; */
+    width: 50%;
+    height: 35%;
+    border-radius: 30px;
+    padding: 10px;
+    overflow: scroll;
+    background-color: rgba(155, 138, 115, 0.397);
+}
+
+h5 {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(39, 5, 125);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.question-text {
+    /* border: 1px solid cadetblue; */
+    font-weight: 500;
+    padding: 5px;
+    font-size: 30px;
+    color: rgb(250, 37, 0);
+}
+
+.answer {
+    /* border: 1px solid hotpink; */
+    height: 35%;
+    width: 50%;
+    margin-top: 10px;
+    border-radius: 20px;
+    padding: 10px;
+    overflow: scroll;
+    background-color: rgba(205, 92, 92, 0.555);
+}
+
+.answer-text {
+    color: rgb(1, 41, 82);
+    font-size: 30px;
+    width: 90%;
+    font-weight: 500;
+}
+
+button {
+    height: 40px;
+    width: 130px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    background-color: crimson;
+    color: white;
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: darkcyan;
+}
+
+button:active {
+    transform: scale(0.96);
+}
+
+.button-and-error {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    display: none;
+}
+
+
+@media only screen and (max-width: 500px) {
+    body {
+        background-image: url(https://w0.peakpx.com/wallpaper/94/424/HD-wallpaper-laughing-emoji-laughing-emoji-lol-minimal-yellow.jpg);
+        padding: 20px;
+    }
+
+    .main-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .question {
+        width: 100%;
+        height: 40%;
+        padding: 5px;
+    }
+
+    .question-text {
+        color: mediumblue;
+    }
+
+    .answer {
+        width: 100%;
+        height: 40%;
+        padding: 5px;
+    }
+
+    .answer-text {
+        color: white;
+    }
+
+    .laugh {
+        display: block;
+        font-size: 25px;
+        color: darkslateblue;
+        font-weight: 600;
+    }
+
+    .button-and-error {
+        flex-direction: column;
+    }
+}
